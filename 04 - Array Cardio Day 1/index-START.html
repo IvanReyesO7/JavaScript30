@@ -74,10 +74,9 @@
     const countData = data.reduce((obj, instance) => {
       if (!obj[instance]) {
         obj[instance] = 0;
-      } else {
-        obj[instance]++;
-        return obj
-      }
+      } 
+      obj[instance]++;
+      return obj;
     }, {})
     console.log(countData);
   </script>
